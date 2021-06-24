@@ -1,0 +1,79 @@
+.slider {
+  &__left-arrow-btn {
+    background-color: $btn-bgc;
+    border: 0;
+    border-radius: 50px;
+    height: 5vw;
+    left: 1vw;
+    position: absolute;
+    top: 2.5vw;
+    width: 5vw;
+
+    &__left {
+      color: $arrow-color;
+      cursor: pointer;
+      font-size: $arrow-size;
+      left: 1vw;
+      position: absolute;
+      top: 10%;
+    }
+  }
+
+  &__right-arrow-btn {
+    background-color: $btn-bgc;
+    border: 0;
+    border-radius: 50px;
+    height: 5vw;
+    position: absolute;
+    right: 1vw;
+    top: 2.5vw;
+    width: 5vw;
+
+    &__right {
+      color: $arrow-color;
+      cursor: pointer;
+      font-size: $arrow-size;
+      position: absolute;
+      right: 1vw;
+      top: 10%;
+    }
+  }
+}
+
+@include breakpoint(md) {
+  .slider {
+    &__left-arrow-btn {
+      top: 4.5vw;
+    }
+
+    &__right-arrow-btn {
+      top: 4.5vw;
+    }
+  }
+}
+
+@include breakpoint(sm) {
+  .slider {
+    &__left-arrow-btn {
+      height: 10vw;
+      top: 15vw;
+      width: 10vw;
+
+      &__left {
+        font-size: 8vw;
+        left: 2vw;
+      }
+    }
+
+    &__right-arrow-btn {
+      height: 10vw;
+      top: 15vw;
+      width: 10vw;
+
+      &__right {
+        font-size: 8vw;
+        right: 2vw;
+      }
+    }
+  }
+}

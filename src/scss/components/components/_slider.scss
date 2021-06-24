@@ -1,0 +1,17 @@
+.slider {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+
+  &__slider-container {
+    display: flex;
+    position: relative;
+    text-align: center;
+    transition: transform 1s ease-in-out;
+
+    &__slide {
+      // align-items: center;
+      padding: 0 5px;
+    }
+  }
+}
