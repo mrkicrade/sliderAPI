@@ -7,6 +7,7 @@ class Slider {
   // constructor (el, data, options) {
   constructor (el, api, options) {
     this.el = el
+    this.api = api
     this.checkScreenResolution = checkScreenResolution
     this.infinity = options.infinity
     this.lazyLoad = options.lazyLoad

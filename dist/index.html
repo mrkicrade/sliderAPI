@@ -19,7 +19,7 @@
       //   .then(response => response.json())
       //   .then(data => { //data je ceo json niz a ne pojedinacni objekat
           // const slider = new Slider("slider", data, {infinity : true, lazyLoad : true, auto : true}) // slider je el, data je data
-          const slider = new Slider("slider", '/data/data.json', {infinity : false, lazyLoad : true, auto : false}) // slider je el, data je data
+          const slider = new Slider("slider", 'https://jsonplaceholder.typicode.com', {infinity : false, lazyLoad : true, auto : false}) // slider je el, data je data
           slider.initialize();
         });
     // })

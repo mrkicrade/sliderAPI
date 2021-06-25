@@ -6,7 +6,7 @@ import { autoLoad } from '../render/render'
 import { httpService } from '../service/axios'
 
 export default function initialize () {
-  httpService.get('/photos')
+  httpService.get(`${this.api}/photos`)
     .then(response => {
       this.api = response.data
       this.dataInfinity = [...this.api]
